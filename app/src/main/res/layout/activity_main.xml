@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.lxliang.catoncloud.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ui_size_70"
+        android:paddingTop="@dimen/ui_size_90">
+
+        <ImageView
+            android:src="@mipmap/login_head"
+            android:contentDescription="@string/text_logo_title"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="231dp"
+            android:layout_height="53dp" />
+
+        <TextView
+            android:textSize="@dimen/text_size_30"
+            android:textColor="@color/color_dark_orange"
+            android:text="@string/text_logo_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_username"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/ui_size_246"
+            android:layout_height="@dimen/ui_size_36"
+            android:background="@drawable/login_input_bg"
+            android:hint="@string/input_hint_username"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/colorBlueGreen"
+            android:textColorHint="@color/colorBlueGreenTranslucent"
+            android:paddingStart="@dimen/ui_size_10"
+            android:paddingEnd="@dimen/ui_size_10"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/ui_size_246"
+            android:layout_height="@dimen/ui_size_36"
+            android:layout_marginTop="@dimen/ui_size_30"
+            android:background="@drawable/login_input_bg"
+            android:hint="@string/input_hint_password"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/colorBlueGreen"
+            android:textColorHint="@color/colorBlueGreenTranslucent"
+            android:paddingStart="@dimen/ui_size_10"
+            android:paddingEnd="@dimen/ui_size_10"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/ui_size_246"
+            android:layout_height="@dimen/ui_size_36"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ui_size_25"
+            android:background="@drawable/login_btn_bg_selector"
+            android:text="@string/text_btn_login"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_18"/>
+    </LinearLayout>
+
+
+</LinearLayout>
